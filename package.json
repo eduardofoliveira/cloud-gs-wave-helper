@@ -1,0 +1,20 @@
+{
+  "name": "cloud-gs-wave-helper",
+  "version": "1.0.0",
+  "description": "Helper para gerar e enviar QrCode do Gs Wave",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": ["Basix", "GsWave", "Voip", "SIP"],
+  "author": "Eduardo Felipe de Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nodemailer": "^4.4.0",
+    "qr-image": "^3.2.0"
+  }
+}

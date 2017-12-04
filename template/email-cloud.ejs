@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GrandStream Wave - QrCode</title>
+</head>
+<body>
+    <div style="max-width: 600px; border: 1px solid #000; padding: 5px; border-radius: 8px;">
+        <center><h1 style="font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400; margin: 10px 0;">GrandStream Wave QrCode</h1></center>
+        <div style="font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400;">
+            <label style="border: 1px solid #ccc; border-radius: 4px; padding: 0.01em 8px; line-height: 1.8;">Usuário: <%= usuario %></label><br>
+            <label style="border: 1px solid #ccc; border-radius: 4px; padding: 0.01em 8px; line-height: 1.8;">Ramal: <%= ramal %></label><br>
+            <label style="border: 1px solid #ccc; border-radius: 4px; padding: 0.01em 8px; line-height: 1.8;">Dominio: <%= dominio %></label><br>
+            <label style="border: 1px solid #ccc; border-radius: 4px; padding: 0.01em 8px; line-height: 1.8;">Porta: <%= porta %></label>
+        </div>
+        <center>
+            <h1 style="font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400; margin: 10px 0;">QrCode</h1>
+            <img src="cid:unique@kreata.ed" width="250" height="250">
+            <h1 style="font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400; margin: 10px 0;">Instruções</h1>
+        </center>
+        <ul style="list-style: none; font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400;">
+            <li>Abra o aplicativo</li>
+            <li>Aperte no ícone de configuração</li>
+            <li>Selecione a opção "Configurações de Conta"</li>
+            <li>Aperte no ícone "+"</li>
+            <li>Selecione a opção "Conta UCM (Scan QR Code)"</li>
+            <li>Escanei a imagem acima</li>
+            <li>Confirme a adição da nova conta</li>
+        </ul>
+    </div>
+    <div style="font-family: 'Segoe UI',Arial,sans-serif; font-weight: 400;">
+        <table>
+            <tr>
+                <th><img src="cid:unique@kreata.ee"/></th>
+                <td style="padding-left: 10px;">
+                    Suporte Basix<br>
+                    CloudCom Telecom<br>
+                    e-mail: suporte@cloudcom.com.br<br>
+                    phone: +55-11-3711-5000<br>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
