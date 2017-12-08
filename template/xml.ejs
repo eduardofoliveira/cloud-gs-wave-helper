@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AccountConfig version="1">
 <Account>
-     <RegisterServer><%= dominio %></RegisterServer>
+     <RegisterServer><%= dominio %><%- porta.length == 0 ? porta : ':'+porta %></RegisterServer>
      <OutboundServer></OutboundServer>
      <UserID><%= usuario %></UserID>
      <AuthID><%= usuario %></AuthID>

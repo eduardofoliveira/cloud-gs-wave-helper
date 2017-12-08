@@ -17,7 +17,7 @@ const gerar = function(dados){
                 port: 465,
                 auth: {
                     user: 'eduardo@cloudcom.com.br',
-                    pass: ''
+                    pass: '190790edu'
                 }
             })
             
@@ -25,8 +25,9 @@ const gerar = function(dados){
                 const HelperOptions = {
                     from: '"Suporte Basix" <suporte.basix@brastel.com.br>',
                     to: dados.email,
+                    cc: 'suporte.basix@brastel.com.br',
                     replyTo: {"name":'Suporte Basix', "address":'suporte.basix@brastel.com.br'},
-                    subject: 'Instruções de configuração GrandStream Wave',
+                    subject: `Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}`,
                     html: renderizador.render('email-brastel', dados),
                     attachments: [{
                             filename: 'brastel.gif',
@@ -50,16 +51,17 @@ const gerar = function(dados){
                 const HelperOptions = {
                     from: '"Suporte Basix" <suporte@cloudcom.com.br>',
                     to: dados.email,
+                    cc: 'suporte@cloudcom.com.br',
                     replyTo: {"name":'Suporte Basix', "address":'suporte@cloudcom.com.br'},
-                    subject: 'Instruções de configuração GrandStream Wave',
+                    subject: 'Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}',
                     html: renderizador.render('email-cloud', dados),
                     attachments: [{
                             filename: 'cloudcom.jpg',
-                            path: 'C:/nodejs/email/nodemailer/template/cloudcom.jpg',
+                            path: './template/cloudcom.jpg',
                             cid: 'unique@kreata.ee' //same cid value as in the html img src
                             },{
                             filename: 'qrcode.png',
-                            path: 'C:/nodejs/email/nodemailer/template/qrcode.png',
+                            path: './template/qrcode.png',
                             cid: 'unique@kreata.ed' //same cid value as in the html img src
                             }
                     ]
