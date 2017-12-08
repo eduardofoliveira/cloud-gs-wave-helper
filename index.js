@@ -17,7 +17,7 @@ const gerar = function(dados){
                 port: 465,
                 auth: {
                     user: 'eduardo@cloudcom.com.br',
-                    pass: '190790edu'
+                    pass: ''
                 }
             })
             
