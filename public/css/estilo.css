@@ -1,3 +1,7 @@
 .card-eol {
     margin-top: 75px;
 }
+.card-header {
+    background-color: #1976D2;
+    color: #fff;
+}

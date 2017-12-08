@@ -30,11 +30,11 @@ const gerar = function(dados){
                     html: renderizador.render('email-brastel', dados),
                     attachments: [{
                             filename: 'brastel.gif',
-                            path: 'C:/nodejs/email/nodemailer/template/brastel.gif',
+                            path: './template/brastel.gif',
                             cid: 'unique@kreata.ee' //same cid value as in the html img src
                             },{
                             filename: 'qrcode.png',
-                            path: 'C:/nodejs/email/nodemailer/template/qrcode.png',
+                            path: './template/qrcode.png',
                             cid: 'unique@kreata.ed' //same cid value as in the html img src
                             }
                     ]
