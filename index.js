@@ -53,7 +53,7 @@ const gerar = function(dados){
                     to: dados.email,
                     cc: 'suporte@cloudcom.com.br',
                     replyTo: {"name":'Suporte Basix', "address":'suporte@cloudcom.com.br'},
-                    subject: 'Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}',
+                    subject: `Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}`,
                     html: renderizador.render('email-cloud', dados),
                     attachments: [{
                             filename: 'cloudcom.jpg',
