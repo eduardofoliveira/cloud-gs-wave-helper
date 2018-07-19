@@ -25,7 +25,7 @@ const gerar = function(dados){
                 const HelperOptions = {
                     from: '"Suporte Basix" <suporte.basix@brastel.com.br>',
                     to: dados.email,
-                    cc: 'suporte.basix@brastel.com.br',
+                    cc: 'grupo.basix@brastel.com.br',
                     replyTo: {"name":'Suporte Basix', "address":'suporte.basix@brastel.com.br'},
                     subject: `Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}`,
                     html: renderizador.render('email-brastel', dados),
@@ -51,7 +51,7 @@ const gerar = function(dados){
                 const HelperOptions = {
                     from: '"Suporte Basix" <suporte@cloudcom.com.br>',
                     to: dados.email,
-                    cc: 'suporte@cloudcom.com.br',
+                    cc: 'suporte.basix@cloudcom.com.br',
                     replyTo: {"name":'Suporte Basix', "address":'suporte@cloudcom.com.br'},
                     subject: `Configuração GrandStream Wave ${dados.ramal} ${dados.dominio}`,
                     html: renderizador.render('email-cloud', dados),
