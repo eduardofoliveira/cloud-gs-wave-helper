@@ -11,13 +11,23 @@ const gerar = function(dados){
             var output = fs.createWriteStream('template/qrcode.png')
             code.pipe(output)
         
-            const transport = nodemailer.createTransport({
+            const transportBrastel = nodemailer.createTransport({
                 service: 'gmail',
                 secure: true,
                 port: 465,
                 auth: {
-                    user: 'eduardo@cloudcom.com.br',
-                    pass: '190790edu'
+                    user: 'suporte.basix@brastel.com.br',
+                    pass: 'brastel'
+                }
+            })
+
+            const transportCloud = nodemailer.createTransport({
+                service: 'gmail',
+                secure: true,
+                port: 465,
+                auth: {
+                    user: 'suporte1@cloudcom.com.br',
+                    pass: 'Cloud777'
                 }
             })
             
@@ -41,7 +51,7 @@ const gerar = function(dados){
                     ]
                 }
 
-                transport.sendMail(HelperOptions, (error, info) => {
+                transportBrastel.sendMail(HelperOptions, (error, info) => {
                     if(error){
                         reject(error)
                     }
@@ -67,7 +77,7 @@ const gerar = function(dados){
                     ]
                 }
 
-                transport.sendMail(HelperOptions, (error, info) => {
+                transportCloud.sendMail(HelperOptions, (error, info) => {
                     if(error){
                         reject(error)
                     }
