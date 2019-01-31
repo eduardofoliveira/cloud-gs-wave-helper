@@ -17,7 +17,7 @@ const gerar = function(dados){
                 port: 465,
                 auth: {
                     user: 'suporte.basix@brastel.com.br',
-                    pass: 'brastel'
+                    pass: 'B@lpha9001'
                 }
             })
 
